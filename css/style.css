@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.line-top{
+    width: 100%;
+    height: 3px;
+    background-color:#91dd49;
+}
+.header-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-1 img{
+    width: 30%;
+    height: 100%;
+    object-fit: content;
+    box-sizing: border-box;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Nav Begin ------------------------------------------------------------------------------*/
+.nav{
+    text-align: center;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+}
+.nav-main{
+    list-style: none;
+    margin-top: 4%;
+    width: 100%;
+    height: 50px;
+}
+.nav-main li {
+    background: #718093;
+    width: 20%;
+    border: 1px solid #fff;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+}
+.menu-sub li{
+    width: 150%;
+    list-style: none;
+}
+.nav-main li:hover{
+    background: #44bd32; 
+    transition: ease-in-out 0.4s ;
+}
+.menu-sub{
+    display: none;
+    position: absolute; 
+    z-index: 3;
+}
+.nav-main li:hover .menu-sub{
+    display: block;
+}
+
+/* Nav End --------------------------------------------------------------------------------------*/
+
+
+/* Banner Begin ---------------------------------------------------------------------------------*/
+.banner-1 img{
+    width: 100%;
+}
+/* Banner End -----------------------------------------------------------------------------------*/
+
+
+/* Admission information Begin -------------------------------------------------------------------*/
+.line-banner-2{
+    width: 100%;
+    height: 3px;
+    background-color:#91dd49;
+}
+.line-banner-2-1{
+    width: 100%;
+    height: 3px;
+    background-color:#ccc;
+}
+.banner-2{
+    width: 90%;
+    margin: 0 auto;
+}
+.banner-2 img{
+    width: 100%;
+}
+/* Admission information End -------------------------------------------------------------------*/
+
+
+/* IT college Begin ---------------------------------------------------------------------------*/
+.banner3{
+    background-color: #558ed5;
+}
+.text-1{
+    font-size:50px
+}
+.box-left-1{
+    width: 90%;
+    padding: 10px;
+}
+.box-right-1{
+    width: 90%;
+    font-size: 24px;
+    padding: 10px
+}
+.it-college{
+    background-color:#fff;
+    padding-top: 5px;
+}
+.it-college-1{
+    background-color:#2ecc71;
+
+}
+.it-college-2{
+    background-color:#3498db;
+ 
+}
+.it-college-3{
+    background-color:#9b59b6;
+
+}
+.it-college-4{
+    background-color:#9b59b6;
+}
+/* IT college End */
+
+
+/* Business college Begin */
+.banner4{
+    background-color: #e74c3c;
+}
+.box-left-2{
+    width: 90%;
+    padding: 10px;
+}
+.box-right-2{
+    width: 90%;
+    font-size: 24px;
+    padding: 10px;
+}
+.business-college{
+    background-color:#fff;
+    padding-top: 10px;
+}
+.business-college-1{
+    background-color:#7f8fa6;
+
+}
+.business-college-2{
+    background-color:#273c75;
+ 
+}
+.business-college-3{
+    background-color:#353b48;
+
+}
+/* Business college End --------------------------------------------------------------------*/
+
+
+/* News Begin --------------------------------------------------------------------*/
+.news-left{
+    width: 90%;
+    margin: 0 auto;
+    height: 20%;
+    padding: 40px
+}
+.news-left a{
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.news-right{
+    width: 100%;
+}
+.news-right img{
+    width: 100%;
+    object-fit: cover;
+}
+/* News End ------------------------------------------------------------------------------*/
+
+
+/* Topics & Link Begin -------------------------------------------------------------------*/
+.topics-left{
+    width: 95%;
+    margin: 0 auto;
+}
+.topics{
+    height: 800px;
+    overflow-y: scroll;
+    border: solid 1px black;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: lightgray;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5px;
+}
+.topics-header{
+    height: 50px;
+    background-color: #3498db;
+}
+.topics-header p{
+    font-size: 25px;
+    line-height: 50px;
+}
+.topics-right{
+    width: 95%;
+    margin: 0 auto;
+}
+.topics-right img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Topics & Link End ---------------------------------------------------------------------*/
+
+/* Footer Begin --------------------------------------------------------------------------*/
+.footer{
+    background-color: #91dd49;
+    padding: 5%;
+}
+.txt-footer-left{
+    font-size: 20px;
+}
+.menu-footer-main{
+    list-style: none;
+}
+.menu-footer-sub{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Footer End ----------------------------------------------------------------------------*/
+
