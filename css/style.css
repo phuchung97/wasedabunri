@@ -40,16 +40,17 @@ a{
     transition: all 0.5s;
 }
 .sticky a{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-weight: bold;
     transition: all 0.5s;
 }
 .container{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
+    max-width: 800px;
     padding: 0;
-    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .menu{
     display: flex;
@@ -61,15 +62,15 @@ a{
 .menu li{
     font-size: 20px;
     padding-left: 0;
-    font-size: 20px;
+    font-size: 16px;
     width: 20%;
     box-sizing: border-box;
-    border-right: 1px solid #ccc;
     z-index: 3;
 }
 .menu li a{
     color: black;
     text-align: center;
+    border-right: solid 1px #ccc;
 }
 .menu-sub{
     position: absolute;
@@ -99,24 +100,112 @@ li a:hover{
     background-color: #94a089;
 }
 
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #91dd49;
+    line-height:50px;
+    z-index: 4;
+    display: none;
+    position: relative;
+    float: left;
+}
+.logo-res img{
+    height: 40px;
+    padding-left: 50px;
+}
+.menu-res{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:50px;
+    right: 0px;
+    z-index: 6;
+    width: 300px;
+    background-color: #91dd49;
+    transform: translateX(150%);
+    transition: 0.6s ease-out;
+}
+.icon-res{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    text-align: right;
+}
+.nav-active{
+    transform: translate(0%);
+}
+.menu-res li{
+    border-bottom: solid #52565e 1px;
+}
+.menu-res li:last-child{
+    border-bottom: none;
+}
+.menu-res li a{
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu, .header{
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+}
+
 .slider{
     padding-top: 50px;
 }
-
-
-
-
-
-
 
 /* Banner Begin ---------------------------------------------------------------------------------*/
 .banner-1 img{
     width: 100%;
 }
-/* Banner End -----------------------------------------------------------------------------------*/
+
 
 
 /* Admission information Begin -------------------------------------------------------------------*/
+.banner-2{
+    width: 90%;
+    margin: 0 auto;
+}
+.banner-2 p{
+    font-size: 18px;
+}
+.img-bn2{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+.img-bn2 img{
+    width: 100%;
+    height: auto;
+}
+.img-bn2 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.img-bn2:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+.img-bn2-txt{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 30px;
+    background-color:#ccc;
+    bottom: -16px;
+    left:0;
+    opacity: 0.7;
+    text-align: center;
+
+}
 .line-banner-2{
     width: 100%;
     height: 3px;
@@ -127,50 +216,74 @@ li a:hover{
     height: 3px;
     background-color:#ccc;
 }
-.banner-2{
-    width: 90%;
-    margin: 0 auto;
-}
-.banner-2 img{
-    width: 100%;
-}
-/* Admission information End -------------------------------------------------------------------*/
 
 
-/* IT college Begin ---------------------------------------------------------------------------*/
+/* IT college Begin -----------------------------------------*/
 .banner3{
     background-color: #558ed5;
 }
-.text-1{
-    font-size:50px
+.box-left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.box-left-1{
-    width: 90%;
+.box-left p{
+    font-size:40px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-right{
+    width: 95%;
+    margin: 0 auto;
     padding: 10px;
 }
-.box-right-1{
-    width: 90%;
-    font-size: 24px;
-    padding: 10px
+.box-right a{
+    font-size: 20px;
+    color: #0c141d;
 }
+
 .it-college{
     background-color:#fff;
-    padding-top: 5px;
+    padding: 5px;
+}
+.it-college i{
+    color: #fff;
+    font-size:30px;
+    padding-right: 10px;
 }
 .it-college-1{
     background-color:#2ecc71;
-
+    padding: 5px;
+    display: flex;
+    justify-content: left;
 }
 .it-college-2{
     background-color:#3498db;
- 
+    padding: 5px;
+    display: flex;
+    justify-content: left;
 }
 .it-college-3{
     background-color:#9b59b6;
-
+    padding: 5px;
+    display: flex;
+    justify-content: left;
 }
 .it-college-4{
-    background-color:#9b59b6;
+    background-color:#38ada9;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+}
+.banner3 a:hover{
+    font-weight: bold;
+}
+.banner3 i:hover{
+    color: #e67e22;
 }
 /* IT college End */
 
@@ -179,49 +292,66 @@ li a:hover{
 .banner4{
     background-color: #e74c3c;
 }
-.box-left-2{
-    width: 90%;
-    padding: 10px;
-}
-.box-right-2{
-    width: 90%;
-    font-size: 24px;
-    padding: 10px;
-}
+
 .business-college{
     background-color:#fff;
-    padding-top: 10px;
+    padding: 10px;
+}
+.business-college i{
+    color: #fff;
+    font-size:30px;
+    padding-right: 10px;
 }
 .business-college-1{
-    background-color:#7f8fa6;
-
+    background-color:#4a69bd;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
 }
 .business-college-2{
-    background-color:#273c75;
- 
+    background-color:#60a3bc;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
 }
 .business-college-3{
-    background-color:#353b48;
-
+    background-color:#3c6382;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+}
+.banner4 a:hover{
+    font-weight: bold;
+}
+.banner4 i:hover{
+    color: #f368e0;
 }
 /* Business college End --------------------------------------------------------------------*/
 
 
 /* News Begin --------------------------------------------------------------------*/
 .news-left{
-    width: 90%;
-    margin: 0 auto;
-    height: 20%;
-    padding: 40px
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8e9299;
+    opacity: 0.7;
 }
 .news-left a{
     font-size: 24px;
     text-decoration: none;
     font-weight: bold;
     color: black;
+    opacity: 1;
 }
 .news-right{
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .news-right img{
     width: 100%;
@@ -234,9 +364,14 @@ li a:hover{
 .topics-left{
     width: 95%;
     margin: 0 auto;
+    background-color:#8e9299;
+    opacity: 0.8;
+}
+.topics p{
+    font-size:20px;
 }
 .topics{
-    height: 800px;
+    height: 500px;
     overflow-y: scroll;
     border: solid 1px black;
 }
@@ -265,6 +400,10 @@ li a:hover{
     width: 100%;
     object-fit: cover;
 }
+.link a:hover{
+    transform: rotateX(20deg);
+    transition: all 0.2s;
+}
 
 /* Topics & Link End ---------------------------------------------------------------------*/
 
@@ -272,6 +411,9 @@ li a:hover{
 .footer{
     background-color: #91dd49;
     padding: 5%;
+}
+.footer-left{
+    width: 100%;
 }
 .txt-footer-left{
     font-size: 20px;
@@ -292,8 +434,72 @@ li a:hover{
 .footer a:hover{
     text-decoration: underline;
 }
+@media screen and (max-width:768px){
+    .footer-left{
+        display:none;
+    }
+} 
 
 
+
+
+
+
+
+
+
+
+
+.btn-right{
+    width: 60px;
+    background-color: #91dd49;
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+.btn-right div{
+    margin: 0 auto;
+    text-align: center;
+}
+.btn-right p{
+    color: rgb(0, 0, 0);
+    font-size: 16px
+}
+
+.btn-line{
+    width: 50%;
+    height: 1px;
+    background-color: #0c141d;
+}
+.btn-right i{
+    color: rgb(6, 78, 78);
+    font-size: 30px;
+    padding-top: 10px;
+}
+.btn-right i:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.to-top{
+    background: white;
+    position: fixed;
+    bottom:16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    transition: all 0.4s;
+    opacity: 0;
+}
+.to-top-active{
+    opacity: 1;
+}
 
 /* Footer End ----------------------------------------------------------------------------*/
 

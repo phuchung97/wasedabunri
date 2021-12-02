@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-min.png">
     
-    <title>Document</title>
+    <title>早稲田文理専門学校</title>
 </head>
 <body>
     <!-- === Header === -->
     <header class="header">
-        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <a href="index.html"><img src="images/logo-min-main.png" alt=""></a>
         <a href="tel:03-5960-2611">Tel: 03-5960-2611</a>
     </header>
 
@@ -49,7 +50,22 @@
                 </ul>
             </li>  
         </ul>
-
+        <!-- === Menu Reponsive === -->
+        <div class="nav">
+            <div class="logo-res">
+                <img src="images/logo-min-white.png" alt="">
+            </div>
+            <ul class="menu-res">
+                <li><a href="">学校紹介</a></li>
+                <li><a href="">学科紹介</a></li>
+                <li><a href="">産学連携</a></li>
+                <li><a href="">学校へのアクセス</a></li>
+                <li><a href="">お問い合わせ</a></li>  
+            </ul>
+            <div class="icon-res">
+                <i class="fas fa-align-justify"></i>
+            </div>
+        </div>
         <!-- === Slider === -->
         <div class="slider">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -74,69 +90,78 @@
                 </button>
               </div>
         </div>
-    
         <!-- === Banner === -->
         <div class="banner-1 mt-3">
-            <img src="images/content/banner1-1.png" alt="">
+            <a href=""><img src="images/content/banner1-1.png" alt=""></a>
         </div>
-
         <!-- === Banner 2 === -->
         <div class="banner-2 mt-3">
             <p>入学情報サイト</p>
             <div class="row">
-                <div class="col-3" style="padding: 0;">
-                    <div class="line-banner-2"></div>  
-                </div>
-                <div class="col-9" style="padding: 0;">
-                    <div class="line-banner-2-1"></div>  
-                </div>
+                <div class="col-3" style="padding: 0;"><div class="line-banner-2"></div></div>
+                <div class="col-9" style="padding: 0;"><div class="line-banner-2-1"></div></div>
             </div>
-            <p>学校紹介動画、学科紹介
-                オープンキャンパス申込、Web出願のご案内</p>
-            
+            <p>学校紹介動画、学科紹介オープンキャンパス申込、Web出願のご案内</p> 
             <div class="row">
-                <div class="col-4">
-                    <img src="images/content/open-campus-img01.png" alt="">
+                <div class="col-xs-12 col-sm-4 mt-3">
+                    <div class="img-bn2">
+                        <div>
+                            <a href=""><img src="images/content/open-campus-img01.png" alt=""></a>
+                        </div>
+                        <p class="img-bn2-txt">高校生</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="images/content/open-campus-img02.png" alt="">
+                <div class="col-xs-12 col-sm-4 mt-3">
+                    <div class="img-bn2">
+                        <div>
+                            <a href=""><img src="images/content/open-campus-img02.png" alt=""></a>
+                        </div>
+                        <p class="img-bn2-txt">留学生</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="images/content/open-campus-img03.png" alt="">
+                <div class="col-xs-12 col-sm-4 mt-3">
+                    <div class="img-bn2">
+                        <div>
+                            <a href=""><img src="images/content/open-campus-img03.png" alt=""></a>
+                        </div>
+                        <p class="img-bn2-txt">社会人</p>
+                    </div>
                 </div>
             </div>
-            
         </div>
-
         <!-- === IT College === -->
         <div class="banner3 mt-3">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <div class="box-left-1">
-                        <p class="text-1">ITカレッジ</p>
+                    <div class="box-left">
+                        <a href=""><p>ITカレッジ</p></a>
                     </div>
-                    
                 </div>
+
                 <div class="col-md-8 col-sm-12">
-                    <div class="box-right-1">
+                    <div class="box-right">
                         <div class="it-college">
                             <div class="it-college-1">
+                                <a href=""><i class="fab fa-dev"></i></a>
                                 <a href="">アプリ・Web制作学科（2年制）</a>
                             </div>
                         </div>
                         <div class="it-college">
                             <div class="it-college-2">
+                                <a href=""><i class="fas fa-robot"></i></a>
                                 <a href="">AIデザイン学科（2年制）</a>
                             </div>
                         </div>
                         <div class="it-college">
                             <div class="it-college-3">
+                                <a href=""><i class="fas fa-gamepad"></i></a>
                                 <a href="">ゲームクリエイター学科（2年制）</a>
                             </div>
                         </div>
                         <div class="it-college">
                             <div class="it-college-4">
-                                <a href="">ゲームクリエイター学科（2年制）</a>
+                                <a href=""><i class="fas fa-cog"></i></a>
+                                <a href="">電子機器組込みソフトウェア学科（2年制）</a>
                             </div>
                         </div>
                     </div>
@@ -147,33 +172,35 @@
         <div class="banner4 mt-3">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <div class="box-left-2">
-                        <p class="text-1">ビジネスカレッジ</p>
+                    <div class="box-left">
+                        <a href=""><p>ビジネスカレッジ</p></a>
                     </div>
-                    
                 </div>
+
                 <div class="col-md-8 col-sm-12">
-                    <div class="box-right-2">
+                    <div class="box-right">
                         <div class="business-college">
                             <div class="business-college-1">
-                                <a href="">アプリ・Web制作学科（2年制）</a>
+                                <a href=""><i class="fas fa-language"></i></a>
+                                <a href="">日中越英通訳・ガイド学科（2年制）</a>
                             </div>
                         </div>
                         <div class="business-college">
                             <div class="business-college-2">
-                                <a href="">AIデザイン学科（2年制）</a>
+                                <a href=""><i class="fas fa-business-time"></i></a>
+                                <a href="">ビジネス起業経営学科（2年制）</a>
                             </div>
                         </div>
                         <div class="business-college">
                             <div class="business-college-3">
-                                <a href="">ゲームクリエイター学科（2年制）</a>
+                                <a href=""><i class="fas fa-pen-square"></i></a>
+                                <a href="">営業マネジメント学科（2年制）</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- === News === -->
         <div class="news mt-3">
@@ -186,12 +213,11 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="news-right">
-                        <img src="images/content/news-img02.png" alt="">
+                        <a href="index.html"><img src="images/content/news-img02.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- === Topics & Link === -->
         <div class="row mt-3">
             <div class="col-md-6 col-sm-12">
@@ -202,14 +228,26 @@
                     
                     <div class="topics">
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci alias quisquam, distinctio repudiandae aspernatur odio ea vitae, consequatur quas quae optio neque iste, nobis facere rem ad. Minima, eaque!
+                            新型コロナウイルス感染症に関する本校の対応について
+本校では、4月から遠隔授業を開始し、6月から対面授業と遠隔授業を併用した授業を行ってまいりました。学事日程、時間割を調整した上で、すべてのカリキュラムにおいて、授業時間が確保され、新入生・在校生共に、各学年の教育課程の修了や卒業の認定が問題なく執り行える予定です。また、就職活動においても、オンライン面接など新しい就職活動に対応し、厳しい状況ではありますが、活発な就職活動を展開しております。
+本校では、政府・文部科学省、東京都等からの通知や情報に基づき、「学生・教職員など、本校に係る全ての関係者の安全」を最優先に考え、引き続き様々な方法で感染の拡大防止に努めてまいります。
+
+(1) 当校の感染症対策
+○登校時の入口での検温と手消毒
+・校舎入り口に検温所を設け、全ての入校者に対して、手のアルコール消毒と、教職員による発熱者検知サーマルシステムによる検温を実施
+
+○分散登校により３密をなくし、対面授業とオンライン授業を併用（6/1～）
+・新入生と在校生の登校日・登校時間を分けて分散登校にすることにより、密集、密接とならない対面授業の実施
+・対面授業と自宅学習を組み合わせた融合型の授業を実施
+
+当校の取組紹介（文部科学省　専修学校の遠隔授業の取組事例集から抜粋）
+
+○マスクの着用、換気および消毒の徹底
+・教室内でのマスク着用の徹底
+・授業中および授業間の換気の徹底
+・教室使用後は、教員、学生による消毒作業の徹底
+
+学生・教職員の健康状態について（10月1日更新）
                         </p>
                     </div>
                 </div>
@@ -228,8 +266,8 @@
                 </div>
             </div>
         </div>
-
     </div>
+
     <!-- === Footer === -->
     <div class="footer mt-3">
         <div class="row">
@@ -283,23 +321,40 @@
         </div>
 
         <div style="padding-right: 30px; text-align: right;">
-            <p>Copyright Waseda-Bunri College of Arts & Sciences All Rights Reserved.</p>
+            <a target="blank" href="https://phuchung.info1"><p>Copyright @2021 by TPH</p></a>
         </div>
         
     </div>
 
 
-
-
-
-
-
+<!-- === Button Right === -->
+    <div class="btn-right">
+        <div class="btn-icon">
+            <a href="index.html"><i class="fas fa-file-alt"></i></a>
+            <p class="btn-rt">願書</p>
+            <div class="btn-line"></div>
+        </div>
+        <div class="btn-icon">
+            <a href="tel:03-5960-2611"><i class="fas fa-phone-alt"></i></a>
+            <p>連絡</p>
+            <div class="btn-line"></div>
+        </div>
+        <div class="btn-icon">
+            <a href="mailto:info@wbc.ac.jp"><i class="fas fa-envelope-open-text"></i></a>
+            <p>メール</p>
+        </div>
+    </div>
+<!-- === To Top === -->
+<a href="#" class="to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
 
 <!--Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <!--Bootstrap -->
+    <script src="https://kit.fontawesome.com/279fcf7ca9.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function(){
@@ -310,6 +365,7 @@
             })
         });
     </script>
+    <script src="js/app.js"></script>
     
 </body>
 </html>
