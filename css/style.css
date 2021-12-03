@@ -26,23 +26,41 @@ a{
     background-color:#91dd49;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20% 0 20%;
     position: fixed;
     top: 0;
     z-index: 4;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    color: #2c3e50;
 }
-.header img{
-    height:50px;
+.header a{
+    color: black;
+    font-weight: bold;
+    font-size:20px;
 }
-.sticky img{
+.logo{
+    height: 50px;
+    width: 100%;
+}
+.logo img{
     height:40px;
+    float: left;
+    padding-right: 7px;
+}
+.logo a{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.sticky img{
+    height:50px;
     transition: all 0.5s;
 }
 .sticky a{
     font-size: 18px;
-    color: black;
-    font-weight: bold;
+    color: #2c3e50;
     transition: all 0.5s;
 }
 .container{
@@ -84,6 +102,7 @@ a{
 .menu-sub li a{
     text-align: left !important;
     padding-left: 20px;
+    border-right: none;
 }
 li:hover .menu-sub{
     display: block;
@@ -337,7 +356,12 @@ li a:hover{
     align-items: center;
     justify-content: center;
     background-color: #8e9299;
-    opacity: 0.7;
+    opacity: 0.8;
+    padding-left: 10px;
+}
+.news-left a:hover{
+    color: rgb(43, 30, 30);
+    transition: all 0.5s;
 }
 .news-left a{
     font-size: 24px;
