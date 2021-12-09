@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-min.png">
+    
+    <title>WBC | 学科紹介</title>
+</head>
+<body>
+    <!-- === Header === -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-min.png" alt=""></a>
+            <a href="index.html">早稲田文理専門学校</a>
+        </div>
+        <a href="tel:03-5960-2611">Tel:03.5960.2611</a>
+    </header>
+
+    <div class="container">
+        <!-- === Menu === -->
+        <ul class="menu">
+            <li><a href="gakko.html">学校紹介</a>
+                <ul class="menu-sub">
+                    <li><a href="gakko.html">教育理念</a></li>
+                    <li><a href="gakko.html">学園紹介</a></li>
+                    <li><a href="gakko.html">学校基本情報</a></li>
+                </ul>
+            </li>
+            <li><a href="gakka.html">学科紹介</a>
+                <ul class="menu-sub">
+                    <li><a href="gakka.html">アプリ・Web制作</a></li>
+                    <li><a href="gakka.html">AIデザイン</a></li>
+                    <li><a href="gakka.html">ゲームクリエイター</a></li>
+                    <li><a href="gakka.html">電子機器組込み</a></li>
+                    <li><a href="gakka.html">ビジネス起業経営</a></li>
+                    <li><a href="gakka.html">営業マネジメント</a></li>
+                    <li><a href="gakka.html">日中越英通訳・ガイド</a></li>
+                </ul>
+            </li>
+            <li><a href="rennkei.html">産学連携</a></li>
+            <li><a href="acess.html">学校へのアクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a>
+                <ul class="menu-sub">
+                    <li><a href="contact.html">教育理念</a></li>
+                    <li><a href="contact.html">学園紹介</a></li>
+                </ul>
+            </li>  
+        </ul>
+        <!-- === Menu Reponsive === -->
+        <div class="nav">
+            <div class="logo-res">
+                <a href="index.html"><img src="images/logo-min-white.png" alt=""></a>
+            </div>
+            <ul class="menu-res">
+                <li><a href="gakko.html">学校紹介</a></li>
+                <li><a href="gakka.html">学科紹介</a></li>
+                <li><a href="rennkei.html">産学連携</a></li>
+                <li><a href="acess.html">学校へのアクセス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>  
+            </ul>
+            <div class="icon-res">
+                <i class="fas fa-align-justify"></i>
+            </div>
+        </div>
+
+        
+        <div class="pdt-menu-50"></div>
+        <!-- === Content === -->
+        <div class="content">
+             <!-- Page Title  -->
+            <div style="height: 90px">
+                <div style="height: 80px; padding-top: 10px; ">
+                    <div style="height: 70px; width: 80%; margin: 0 auto; border-radius: 10px; background-color: bisque; overflow: hidden">
+                        <div style="float: left; width: 50%; height: 70px; background-color: #3498db; ">
+                            <p style="font-size: 35px; color: #fff; text-align: center; line-height: 70px;">学科紹介</p>
+                        </div>
+                        <div style="float: left; width: 50%; height: 70px; background-color: #8e44ad">
+                            <img style="width: 100%; height: 70px; object-fit: cover"src="images/gakka/top-title.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gakka -->
+            <div class="gakka">
+                <div class="row">
+                    <div class="col-3" style="padding: 0;"><div class="line-banner-2"></div></div>
+                    <div class="col-9" style="padding: 0;"><div class="line-banner-2-1"></div></div>
+                </div>
+                
+
+                <!-- Card Toggle IT -->
+                <div class="mt-3">
+                    <div style="height: 50px; background-color: #3498db; border-radius: 10px;">
+                        <p style="line-height: 50px; text-align: center; font-size: 20px; font-weight: bold">ITカレッジ</p>
+                    </div>
+                </div>
+                <div class="gakka-it-college">
+
+                    <button onclick="toggleIT1()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">アプリ・Web制作学科</button>
+                    <div id="gakka-it-college-toggle-1" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>モバイルアプリ開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">スマートフォンアプリ開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">Javaプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ソフトウェア開発</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Web開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">Webサイト管理者</p>
+                                            <p style="padding-left: 20px; font-size: 12px">Webプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ソフトウェア開発</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>Webサイトやアプリ開発に必要なIT基礎知識、Javaなどによるプログラミング、HTML／CSS／JavascriptなどによるWebデザインの知識・技術を学び、プログラミングスキル、デザインスキルを実習ベースで身につけます</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleIT2()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">AIデザイン学科</button>
+                    <div id="gakka-it-college-toggle-2" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>AIビジネスデザイナー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">AIを活用した新サービス・商品の提案、企画・開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ビジネスにAIを活用したプロジェクトの推進</p>
+                                            <p style="padding-left: 20px; font-size: 12px">AIコンサルティング</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>AIエンジニア</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ITシステムとAIの活用</p>
+                                            <p style="padding-left: 20px; font-size: 12px">AIプログラマー</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>IT・AIの基礎的な技術を学ぶ</p>
+                                <p>AIを活用するためにPythonなどによるプログラミング技術を学ぶ</p>
+                                <p>プロジェクト・ベースド・ラーニング（PBL、課題解決型学習）による実践的な授業</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleIT3()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">電子機器組込みソフトウェア学科</button>
+                    <div id="gakka-it-college-toggle-3" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>自動車関連業界、通信機器関連業界</p>
+                                            <p style="padding-left: 20px; font-size: 12px">家庭電化製品業界などの各業種のシステム</p>
+                                            <p style="padding-left: 20px; font-size: 12px">開発部門などのシステムエンジニア</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>組込みエンジニア</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>電子機器をプログラムで制御するために、電子機器、ロボット、自動車などの動作や仕組み、マイクロコンピュータの周辺回路の基礎的な技術を学び、ロボット、電子機器の制御スキルを、プログラミング実習を実践しながら身につけます</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleIT4()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">ゲームクリエイター学科</button>
+                    <div id="gakka-it-college-toggle-4" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                            <p style="padding-left: 20px; font-size: 12px">ゲームプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">グラフィックプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">2Dゲームキャラクターデザイナー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ゲームエフェクトデザイナー</p>
+                                    </div>
+                                    <div class="col-6">
+                                            <p style="padding-left: 20px; font-size: 12px">ライブラリー・ツールプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">サウンドプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">3Dゲームキャラクターデザイナー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">3Dゲームモーションデザイナー</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>ゲームクリエイター学科は、ゲーム業界を目指す方に現場で行われている最新の仕事に合わせて、自分に合った仕事を見つけ出す学科です。ゲームの仕事も多種多様。自分に合った仕事は必ず見つかります。たくさんありすぎて迷っているあなたもこの学科であれば見つけられます。自分に合う仕事でゲーム業界に就職しよう。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Card Toggle Admission -->
+                <div class="mt-3">
+                    <div style="height: 50px; background-color: #44bd32; border-radius: 10px;">
+                        <p style="line-height: 50px; text-align: center; font-size: 20px; font-weight: bold">ビジネスカレッジ</p>
+                    </div>
+                </div>
+                <div class="gakka-it-college">
+
+                    <button onclick="toggleAd1()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">アプリ・Web制作学科</button>
+                    <div id="gakka-admission-toggle-1" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>モバイルアプリ開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">スマートフォンアプリ開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">Javaプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ソフトウェア開発</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Web開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">Webサイト管理者</p>
+                                            <p style="padding-left: 20px; font-size: 12px">Webプログラマー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ソフトウェア開発</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>Webサイトやアプリ開発に必要なIT基礎知識、Javaなどによるプログラミング、HTML／CSS／JavascriptなどによるWebデザインの知識・技術を学び、プログラミングスキル、デザインスキルを実習ベースで身につけます</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleAd2()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">AIデザイン学科</button>
+                    <div id="gakka-admission-toggle-2" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>AIビジネスデザイナー</p>
+                                            <p style="padding-left: 20px; font-size: 12px">AIを活用した新サービス・商品の提案、企画・開発</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ビジネスにAIを活用したプロジェクトの推進</p>
+                                            <p style="padding-left: 20px; font-size: 12px">AIコンサルティング</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>AIエンジニア</p>
+                                            <p style="padding-left: 20px; font-size: 12px">ITシステムとAIの活用</p>
+                                            <p style="padding-left: 20px; font-size: 12px">AIプログラマー</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>IT・AIの基礎的な技術を学ぶ</p>
+                                <p>AIを活用するためにPythonなどによるプログラミング技術を学ぶ</p>
+                                <p>プロジェクト・ベースド・ラーニング（PBL、課題解決型学習）による実践的な授業</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleAd3()" style="width: 100%; margin-top: 10px" type="button" class="btn btn-secondary">電子機器組込みソフトウェア学科</button>
+                    <div id="gakka-admission-toggle-3" class="mt-3">
+                        <div class="card">
+                            <h5 class="card-header">目指す職業</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>自動車関連業界、通信機器関連業界</p>
+                                            <p style="padding-left: 20px; font-size: 12px">家庭電化製品業界などの各業種のシステム</p>
+                                            <p style="padding-left: 20px; font-size: 12px">開発部門などのシステムエンジニア</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>組込みエンジニア</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">学科説明</h5>
+                            <div class="card-body">
+                                <p>電子機器をプログラムで制御するために、電子機器、ロボット、自動車などの動作や仕組み、マイクロコンピュータの周辺回路の基礎的な技術を学び、ロボット、電子機器の制御スキルを、プログラミング実習を実践しながら身につけます</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+
+            
+            
+        <!-- Content End -->
+        </div>
+    <!-- Container End -->
+    </div>
+
+
+
+            
+
+
+        
+
+    <!-- === Footer === -->
+    <div class="footer mt-3">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <div class="footer-left">
+                    <p class="txt-footer-left">トップメニュー</p>
+                    <ul class="menu-footer-main">
+                        <li><a href="gakko.html">学校紹介</a></li>
+                            <ul class="menu-footer-sub">
+                                <li><a href="gakko.html">教育理念・方針</a></li>
+                                <li><a href="gakko.html">学園紹介</a></li>
+                                <li><a href="gakko.html">学校基本情報</a></li>
+                            </ul>
+                        <li><a href="acess.html">アクセス</a></li>
+                        <li><a href="">資料請求</a></li>
+                        <li><a href="">出願方法</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="">採用情報</a></li>
+                        <li><a href="">企業の方へ求人票</a></li>
+                        <li><a href="">プライバシーポリシー</a></li>
+                        <li><a href="">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+                <div class="footer-left">
+                    <div class="footer-left">
+                        <p class="txt-footer-left">学部系メニュー</p>
+                        <ul class="menu-footer-main">
+                            <li><a href="">ITカレッジ</a></li>
+                            <li><a href="">ITカレッジ(留学生向け)</a></li>
+                            <li><a href="">ビジネスカレッジ(留学生向け)</a></li>
+                        </ul>
+                        </br>
+                        <a href=""><p class="txt-footer-left">産学連携の取り組み</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="footer-right">
+                    <p>学校法人　中央情報学園</p>
+                    <a style="font-size: 30px; font-weight: bold;" href="index.html">早稲田文理専門学校</a>
+                    <p>〒171-0033 東京都豊島区高田2-6-7
+                        電話:03-5960-2611　FAX:03-5960-2622</p>
+                    <p>姉妹校　中央情報専門学校</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-right: 30px; text-align: right;">
+            <a target="blank" href="https://phuchung.info"><p>Copyright @2021 by TPH</p></a>
+        </div>
+        
+    </div>
+
+
+<!-- === Button Right === -->
+    <div class="btn-right">
+        <div class="btn-icon">
+            <a href="index.html"><i class="fas fa-file-alt"></i></a>
+            <p class="btn-rt">願書</p>
+            <div class="btn-line"></div>
+        </div>
+        <div class="btn-icon">
+            <a href="tel:03-5960-2611"><i class="fas fa-phone-alt"></i></a>
+            <p>連絡</p>
+            <div class="btn-line"></div>
+        </div>
+        <div class="btn-icon">
+            <a href="mailto:info@wbc.ac.jp"><i class="fas fa-envelope-open-text"></i></a>
+            <p>メール</p>
+        </div>
+    </div>
+<!-- === To Top === -->
+<a href="#" class="to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!--Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<!--Bootstrap -->
+    <script src="https://kit.fontawesome.com/279fcf7ca9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $(".header").addClass("sticky")
+                }
+            })
+        });
+    </script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

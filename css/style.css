@@ -526,4 +526,43 @@ li a:hover{
 }
 
 /* Footer End ----------------------------------------------------------------------------*/
+.pdt-menu-50{
+    width: 100;
+    height: 50px;
+}
+
+.content{
+    background-color:#fff;
+    width: 100%;
+}
+/* Gakko Page------------------------------------------*/
+.gakko{
+    width: 85%;
+    margin: 0 auto;
+}
+.gakko img{
+    width: 100%;
+    height: auto;
+}
+.gakko p{
+    text-align: center;
+}
+/* Gakka Page------------------------------------------*/
+.gakka{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.gakka-it-college{
+    width: 90%;
+    margin-left: 10%;
+}
+#gakka-it-college-toggle-1, #gakka-it-college-toggle-2, #gakka-it-college-toggle-3, #gakka-it-college-toggle-4, #gakka-admission-toggle-1, #gakka-admission-toggle-2, #gakka-admission-toggle-3{
+    display: none;
+}
+
+
+
+
 
