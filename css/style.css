@@ -561,6 +561,11 @@ li a:hover{
 #gakka-it-college-toggle-1, #gakka-it-college-toggle-2, #gakka-it-college-toggle-3, #gakka-it-college-toggle-4, #gakka-admission-toggle-1, #gakka-admission-toggle-2, #gakka-admission-toggle-3{
     display: none;
 }
+#more{
+    font-size: 10px;
+    font-style: italic;
+    
+}
 
 
 
